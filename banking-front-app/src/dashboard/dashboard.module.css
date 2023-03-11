@@ -1,0 +1,57 @@
+.dashCont {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    gap: 40px;
+    justify-items: center;
+    align-items: center;
+    margin: 16px;
+  }
+  
+  .dashCont > div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    font-size: 2em;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(to bottom, #e64f00, #cb0300);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .dashCont > div:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+    border: 2px solid #fff;
+  }
+  
+  .dashCont > div:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .dashCont > div:hover:after {
+    opacity: 1;
+  }
+  
+  @media (max-width: 768px) {
+    .dashCont {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  

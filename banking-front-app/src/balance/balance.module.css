@@ -1,0 +1,60 @@
+.balCont {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.balCont > h1 {
+    color: #e64f00;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.balCont > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e64f00;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.balCont > form > label {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.balCont > form > input[type="text"] {
+    width: 100%;
+    font-size: 1.5em;
+    padding: 10px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.balCont > form > input[type="submit"] {
+    width: 100%;
+    font-size: 1.5em;
+    padding: 10px;
+    margin-top: 16px;
+    background-color: #fff;
+    color: #e64f00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.balCont > form > input[type="submit"]:hover {
+    background-color: #fff;
+}
